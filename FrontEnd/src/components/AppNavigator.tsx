@@ -15,6 +15,7 @@ import Card from '../components/Card'
 import { StatusBar } from 'react-native';
 
 import {HomeScreen} from '../screens/HomeScreen'
+import FormExample from './loginWidget';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -36,14 +37,15 @@ const LoginScreen: React.FC = () => {
     return (
       <View>
         {/* <HeaderApp /> */}
-        <View style={s.secondarybackgroundColor}>
-          <Text style={[s.backgroundColor, s.fs72, s.p4]}>Login Page</Text>
-        </View>
-        <Text style={[s.backgroundColor, s.primaryColor, s.fs24, s.p2]}>Email :</Text>
+        {/* <View style={s.secondarybackgroundColor}> */}
+          {/* <Text style={[s.backgroundColor, s.fs72, s.p4]}>Login Page</Text> */}
+        {/* </View> */}
+        {/* <Text style={[s.backgroundColor, s.primaryColor, s.fs24, s.p2]}>Email :</Text> */}
         {/* <Input text_placeholder="Ceci est un input où il est possible d'écrire du texte" text_keyboardType="numeric" /> */}
-        <Text style={[s.backgroundColor, s.primaryColor, s.fs24, s.p2]}>Mot de passe :</Text>
+        {/* <Text style={[s.backgroundColor, s.primaryColor, s.fs24, s.p2]}>Mot de passe :</Text> */}
         {/* <Input text_placeholder="Ceci est un input où il est possible d'écrire du texte" text_keyboardType="numeric" /> */}
         {/* <FlatButton text="Click me !" bkgColor={s.primarybackgroundColor} txtColor={s.foregroundColor} /> */}
+        <FormExample></FormExample>
       </View>
     );
   };
