@@ -17,7 +17,7 @@ const onSubmit = (values: FormValues) => {
   console.log(values);
 };
 
-const FormExample = () => {
+const LoginForm = () => {
   return (
     <View style={styles.container}>
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
@@ -62,4 +62,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default FormExample;
+export default LoginForm;

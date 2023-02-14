@@ -5,50 +5,13 @@ import { Ionicons } from '@expo/vector-icons';
 import { Text, View } from 'react-native';
 import HeaderApp from '..//components/HeaderApp';
 import s from '../assets/styles/globalStyles';
-
-// import FlatButton from '../../components/interactives/button';
-
-import Card from '../components/Card'
-
-// import Input from '../../components/interactives/input';
-
 import { StatusBar } from 'react-native';
 
-import {HomeScreen} from '../screens/HomeScreen'
-import FormExample from './loginWidget';
+import {HomeScreen} from '../screens/HomeScreen';
+import { LoginScreen } from '../screens/LoginScreen';
+import { ProfileScreen } from '../screens/ProfileScreen';
 
 const Tab = createMaterialTopTabNavigator();
-
-const ProfileScreen: React.FC = () => {
-    return (
-        <View>
-            {/* <HeaderApp /> */}
-            <View style={s.secondarybackgroundColor}>
-                <Ionicons name="person-circle-outline" size={100} color="#fff" />
-                <Text style={[s.backgroundColor, s.fs36, s.p4]}>Hello YP522 !</Text>
-            </View>
-        </View>
-    );
-};
-
-
-
-const LoginScreen: React.FC = () => {
-    return (
-      <View>
-        {/* <HeaderApp /> */}
-        {/* <View style={s.secondarybackgroundColor}> */}
-          {/* <Text style={[s.backgroundColor, s.fs72, s.p4]}>Login Page</Text> */}
-        {/* </View> */}
-        {/* <Text style={[s.backgroundColor, s.primaryColor, s.fs24, s.p2]}>Email :</Text> */}
-        {/* <Input text_placeholder="Ceci est un input où il est possible d'écrire du texte" text_keyboardType="numeric" /> */}
-        {/* <Text style={[s.backgroundColor, s.primaryColor, s.fs24, s.p2]}>Mot de passe :</Text> */}
-        {/* <Input text_placeholder="Ceci est un input où il est possible d'écrire du texte" text_keyboardType="numeric" /> */}
-        {/* <FlatButton text="Click me !" bkgColor={s.primarybackgroundColor} txtColor={s.foregroundColor} /> */}
-        <FormExample></FormExample>
-      </View>
-    );
-  };
 
   const AppNavigator = () => {
     return (
